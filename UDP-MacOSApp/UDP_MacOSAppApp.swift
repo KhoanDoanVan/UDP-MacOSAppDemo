@@ -11,7 +11,11 @@ import SwiftUI
 struct UDP_MacOSAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let ip = getLocalIPAddress() {
+                ContentView(ipAddress: ip)
+            } else {
+                Text("Failed to get IP Address")
+            }
         }
     }
 }

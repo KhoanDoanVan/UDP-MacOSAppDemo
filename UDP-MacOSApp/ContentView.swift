@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    let ipAddress: String
 
-#Preview {
-    ContentView()
+    var body: some View {
+        TabView {
+            QRCodeView(ipAddress: ipAddress)
+                .tabItem {
+                    Label("QR Code", systemImage: "qrcode")
+                }
+
+            GestureBoxView()
+                .tabItem {
+                    Label("Gesture Box", systemImage: "square.and.pencil")
+                }
+        }
+        .frame(width: 400, height: 400)
+    }
 }
