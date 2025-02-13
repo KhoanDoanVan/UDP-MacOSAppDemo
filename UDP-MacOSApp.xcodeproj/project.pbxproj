@@ -10,9 +10,22 @@
 		463DF8DA2D5A4323001F253B /* UDP-MacOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UDP-MacOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		463991182D5E2FC5003028F3 /* Exceptions for "UDP-MacOSApp" folder in "UDP-MacOSApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 463DF8D92D5A4323001F253B /* UDP-MacOSApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		463DF8DC2D5A4323001F253B /* UDP-MacOSApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				463991182D5E2FC5003028F3 /* Exceptions for "UDP-MacOSApp" folder in "UDP-MacOSApp" target */,
+			);
 			path = "UDP-MacOSApp";
 			sourceTree = "<group>";
 		};
@@ -257,6 +270,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UDP-MacOSApp/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -284,6 +298,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UDP-MacOSApp/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
